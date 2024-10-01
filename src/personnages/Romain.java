@@ -9,6 +9,16 @@ public class Romain {
 		this.force = force;
 	}
 	
+	private boolean forceDuRomain(Romain romain) 
+	{
+		if (force >= 0)
+		{
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
 	public String getNom() {
 		return nom;
 	}
@@ -32,6 +42,6 @@ public class Romain {
 	
 	public static void main(String[] args) {
 		Romain remus = new Romain("remus",5);
-		remus.recevoirCoup(2);
+		//remus.recevoirCoup(2);
 	}
 }
